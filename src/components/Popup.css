@@ -1,0 +1,98 @@
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .popup-content {
+        background: linear-gradient(135deg, #263243, #0B0F1A); /* Popup background */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        max-width: 500px;
+        width: 90%;
+        position: relative;
+    }
+    
+    .popup-content h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    
+    .popup-content button {
+        background-color: #364A69;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+    }
+    
+    .popup-content button:hover {
+        background-color: #1D2D59;
+    }
+    
+    .popup-content .close-button {
+        background-color: #d9534f; /* Red for close button */
+    }
+    
+    .popup-content .close-button:hover {
+        background-color: #c9302c;
+    }
+    
+    .food-input-group {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    
+    .food-input-group input {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background-color: #1D2D59;
+        color: white;
+    }
+    
+    .food-input-group input::placeholder {
+        color: #aaa;
+    }
+    
+    .food-list ul {
+        list-style: none;
+        padding: 0;
+        max-height: 150px;
+        overflow-y: auto;
+        margin-bottom: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .food-list li {
+        padding: 8px 0;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        text-align: left;
+    }
+    
+    .food-list li:last-child {
+        border-bottom: none;
+    }
+    
+    .popup-actions {
+        margin-top: 20px;
+    }
